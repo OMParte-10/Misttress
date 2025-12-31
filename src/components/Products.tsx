@@ -5,31 +5,27 @@ export function Products() {
   const products = [
     {
       id: 1,
-      name: "Velvet Noir",
+      name: "Golden Haze",
       price: "₹4,999",
       image: "https://images.unsplash.com/photo-1719175936556-dbd05e415913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBwZXJmdW1lJTIwYm90dGxlfGVufDF8fHx8MTc2NDAxNTEwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      rating: 5
     },
     {
       id: 2,
-      name: "Rose Mystique",
+      name: "Blossom Rush",
       price: "₹3,999",
       image: "https://images.unsplash.com/photo-1613521140785-e85e427f8002?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwZnJhZ3JhbmNlJTIwcHJvZHVjdHxlbnwxfHx8fDE3NjQwNDkxMjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      rating: 5
     },
     {
       id: 3,
-      name: "Amber Essence",
+      name: "Berry Pop",
       price: "₹4,499",
       image: "https://images.unsplash.com/photo-1625173709697-7dc5e371349f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcGVyZnVtZSUyMGRlc2lnbnxlbnwxfHx8fDE3NjQwNDkxMjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      rating: 5
     },
     {
       id: 4,
-      name: "Crystal Bloom",
+      name: "Coastal Calm",
       price: "₹5,499",
       image: "https://images.unsplash.com/photo-1759793500112-c588839cfc6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxwcmVtaXVtJTIwZnJhZ3JhbmNlJTIwYm90dGxlfGVufDF8fHx8MTc2NDAyNjQ0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      rating: 5
     }
   ];
 
@@ -38,7 +34,8 @@ export function Products() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <p
-            className="tracking-[0.3em] text-[var(--light-brown-dark)] mb-4 uppercase text-sm font-medium"
+            className="tracking-[0.5em] text-[var(--light-brown-dark)] mb-4 uppercase text-sm font-medium"
+            style={{ fontSize: '1.5rem' }}
           >
             Discover Our Collection
           </p>
@@ -85,7 +82,7 @@ export function Products() {
                   {product.price}
                 </p>
 
-                <button className="mt-4 px-6 py-2 border border-[var(--medium-brown)]/20 rounded-full text-[var(--medium-brown)] text-xs uppercase tracking-widest hover:bg-[var(--medium-brown)] hover:text-white transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
+                <button className="mt-4 px-6 py-2 border border-[var(--medium-brown)]/20 rounded-full text-[var(--medium-brown)] text-xs uppercase tracking-widest transition-all duration-300 hover:bg-[var(--medium-brown)] hover:text-white hover:shadow-lg hover:-translate-y-0.5">
                   View Details
                 </button>
               </div>

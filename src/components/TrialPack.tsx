@@ -2,10 +2,22 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function TrialPack() {
   const fragrances = [
-    "Velvet Noir - Sophisticated & Mysterious",
-    "Rose Mystique - Floral & Romantic",
-    "Amber Essence - Warm & Luxurious",
-    "Crystal Bloom - Fresh & Elegant"
+    {
+      name: "Golden Haze",
+      description: "Sweet, cosy, vanilla-caramel kind of yummy… like you just walked out smelling snack-level good."
+    },
+    {
+      name: "Blossom rush",
+      description: "Light, clean, soft floral… like that quiet moment where everything suddenly feels a little more put together."
+    },
+    {
+      name: "Berry Pop",
+      description: "Refreshing, zesty, citrusy… like a quick, invigorating splash of watermelon or strawberries."
+    },
+    {
+      name: "Coastal Calm",
+      description: "Calming, sea-scented, saltwater… like a gentle breeze from the ocean."
+    },
   ];
 
   return (
@@ -25,7 +37,7 @@ export function TrialPack() {
               lineHeight: '1.2'
             }}
           >
-            Trial Pack or Pack of Four
+            Trial Pack
           </h2>
         </div>
 
@@ -35,7 +47,7 @@ export function TrialPack() {
           <div className="w-full lg:w-[65%] relative overflow-hidden bg-[var(--soft-beige-light)] rounded-r-[3rem] lg:rounded-r-[5rem]">
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1761865544944-2c8da85c869e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJmdW1lJTIwZ2lmdCUyMHNldCUyMGx1eHVyeXxlbnwxfHx8fDE3NjQwNDkzNzN8MA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Trial Pack or Pack of Four"
+              alt="Trial Pack"
               className="w-full h-full object-cover min-h-[500px] lg:min-h-[600px] transform hover:scale-105 transition-transform duration-1000 ease-out"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[var(--medium-brown)]/10 to-transparent mix-blend-multiply" />
@@ -54,7 +66,7 @@ export function TrialPack() {
                     className="text-[var(--dark-brown)] group-hover:text-[var(--medium-brown-dark)] transition-colors text-lg"
                     style={{ fontFamily: 'var(--font-serif)' }}
                   >
-                    {fragrance}
+                    <span className="font-bold">{fragrance.name}</span>: {fragrance.description}
                   </p>
                 </div>
               ))}

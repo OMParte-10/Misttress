@@ -10,7 +10,8 @@ export function ScrollBanner() {
     "★",
     "ALCOHOL-FREE",
     "★",
-    "SHOP NOW"
+    "SHOP NOW",
+    "★"
   ];
 
   return (
