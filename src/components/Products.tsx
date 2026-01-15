@@ -34,7 +34,7 @@ export function Products() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <p
-            className="tracking-[0.5em] text-[var(--light-brown-dark)] mb-4 uppercase text-sm font-medium"
+            className="tracking-[0.2em] text-[var(--light-brown-dark)] mb-4 uppercase text-sm font-medium"
             style={{ fontSize: '1.5rem' }}
           >
             Discover Our Collection
